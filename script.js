@@ -1,1 +1,0 @@
-document.querySelectorAll(".card").forEach(c=>{c.onmousemove=e=>{const r=c.getBoundingClientRect();c.style.background=`radial-gradient(circle at ${e.clientX-r.left}px ${e.clientY-r.top}px,#22d3ee22,#ffffff10)`};c.onmouseleave=()=>c.style.background="#ffffff10";});
