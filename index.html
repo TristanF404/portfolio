@@ -9,70 +9,113 @@
 <style>
 
 :root{
-    --background:#100018;
-    --card:#1b1028;
-    --cyan:#00f5ff;
+    --background:#09090f;
+    --card:#111827;
+    --cyan:#00eaff;
     --pink:#ff4fd8;
-    --text:#f2efff;
-    --muted:#aaa;
+    --text:#f8fafc;
+    --muted:#cbd5e1;
+    --border:rgba(255,255,255,.12);
 }
+
+
+html{
+    min-height:100%;
+    background:#09090f;
+}
+
 
 *{
     box-sizing:border-box;
 }
 
+
 body{
+
     margin:0;
-    background:
-    radial-gradient(circle at top,#3b1263,#100018 55%);
+
+    min-height:100vh;
+
+    background:#09090f;
+
     color:var(--text);
+
     font-family:"Segoe UI",Arial,sans-serif;
+
 }
+
 
 
 /* HERO */
 
+
 .hero{
+
     text-align:center;
+
     padding:90px 20px;
+
 }
 
+
 .hero h1{
+
     font-size:70px;
+
     margin:0;
 
-    background:linear-gradient(
+    background:
+
+    linear-gradient(
         90deg,
         var(--cyan),
         var(--pink)
     );
 
     -webkit-background-clip:text;
+
     color:transparent;
+
 }
 
+
 .hero p{
+
     max-width:850px;
+
     margin:20px auto;
+
     font-size:20px;
-    color:#ccc;
+
+    color:var(--muted);
+
+    line-height:1.6;
+
 }
+
 
 
 /* BUTTONS */
 
+
 .buttons a{
 
     display:inline-block;
+
     padding:12px 25px;
+
     margin:8px;
 
     border-radius:30px;
 
     text-decoration:none;
-    color:white;
+
+    color:#09090f;
+
+    font-weight:700;
 
     background:
+
     linear-gradient(
         90deg,
         var(--cyan),
@@ -80,31 +123,42 @@ body{
     );
 
     transition:.3s;
+
 }
 
 
 .buttons a:hover{
+
     transform:translateY(-4px);
+
 }
+
 
 
 /* MAIN */
 
+
 .container{
 
     max-width:1300px;
+
     margin:auto;
+
     padding:20px;
 
 }
 
 
+
 .section{
 
     background:
-    rgba(255,255,255,.05);
 
-    border:1px solid rgba(255,255,255,.1);
+    #111827;
+
+    border:
+
+    1px solid var(--border);
 
     border-radius:18px;
 
@@ -112,9 +166,12 @@ body{
 
     margin-bottom:25px;
 
-    backdrop-filter:blur(10px);
+    box-shadow:
+
+    0 10px 25px rgba(0,0,0,.35);
 
 }
+
 
 
 h2{
@@ -122,6 +179,7 @@ h2{
     color:var(--cyan);
 
     border-bottom:
+
     2px solid var(--pink);
 
     padding-bottom:10px;
@@ -130,12 +188,17 @@ h2{
 
 
 
+/* CARDS */
+
+
 .card{
 
     background:
-    rgba(0,0,0,.25);
+
+    #0f172a;
 
     border-left:
+
     4px solid var(--pink);
 
     border-radius:12px;
@@ -144,21 +207,43 @@ h2{
 
     margin:15px 0;
 
+    transition:.3s;
+
+}
+
+
+.card:hover{
+
+    transform:translateY(-3px);
+
+    background:#172033;
+
+}
+
+
+.card h3{
+
+    color:white;
+
 }
 
 
 
+/* TEXT */
+
+
 .placeholder{
 
-    color:#888;
+    color:#d1d5db;
 
-    font-style:italic;
+    line-height:1.7;
 
 }
 
 
 
 /* SKILLS */
+
 
 .skill{
 
@@ -170,15 +255,22 @@ h2{
 
     border-radius:25px;
 
-    background:#241338;
+    background:
+
+    rgba(0,234,255,.08);
+
+    color:#f8fafc;
 
     border:
+
     1px solid var(--cyan);
 
 }
 
 
+
 /* FOOTER */
+
 
 .footer{
 
@@ -186,9 +278,10 @@ h2{
 
     padding:30px;
 
-    color:#888;
+    color:#94a3b8;
 
 }
+
 
 </style>
 
@@ -207,16 +300,11 @@ Portfolio<br>
 Projects • Experience • Skills • Online Work
 </p>
 
-
-
-
 </div>
 
 
 
-
 <div class="container">
-
 
 
 <div class="section">
@@ -224,17 +312,24 @@ Projects • Experience • Skills • Online Work
 <h2>About Me</h2>
 
 <p class="placeholder">
+
 I’m an aspiring developer with a passion for coding, technology, and building online communities. I am the founder of Eldenstead, a gaming company focused on creating immersive experiences and bringing people together through online platforms.
-<br>
+
+<br><br>
+
 Throughout my journey, I have worked on multiple gaming servers and online projects, contributing to both frontend and backend development. I enjoy designing systems, solving technical challenges, and creating reliable experiences for users.
-<br>
+
+<br><br>
+
 Outside of development, I have professional experience working as a Sales Associate at Dollar General, where I developed valuable skills in customer service, communication, teamwork, and problem-solving.
-<br>
+
+<br><br>
+
 I am always looking to learn new technologies, improve my skills, and take on new challenges in the world of software development and IT.
+
 </p>
 
 </div>
-
 
 
 
@@ -246,14 +341,18 @@ I am always looking to learn new technologies, improve my skills, and take on ne
 
 <div class="card">
 
-<h3>
-Dollar General / Sales Associate
-</h3>
+<h3>Dollar General / Sales Associate</h3>
 
 <p class="placeholder">
 
-Worked as a Sales Associate at Dollar General, gaining experience in customer service, retail operations, inventory management, and teamwork. Responsibilities included assisting customers, maintaining store organization, stocking merchandise, handling transactions, and supporting daily store operations.
-<br>
+Worked as a Sales Associate at Dollar General, gaining experience in customer service, retail operations, inventory management, and teamwork.
+
+<br><br>
+
+Responsibilities included assisting customers, maintaining store organization, stocking merchandise, handling transactions, and supporting daily store operations.
+
+<br><br>
+
 This role helped develop strong communication, problem-solving, time management, and responsibility skills while working in a fast-paced environment.
 
 </p>
@@ -261,11 +360,7 @@ This role helped develop strong communication, problem-solving, time management,
 </div>
 
 
-
-
 </div>
-
-
 
 
 
@@ -278,20 +373,21 @@ This role helped develop strong communication, problem-solving, time management,
 
 <div class="card">
 
-<h3>
-Eldenstead
-</h3>
+<h3>Eldenstead</h3>
 
 <p class="placeholder">
 
 Role -> Founder
+
 <br>
+
 Date Joined -> 4-12-2026
+
 <br>
+
 Date Left -> N/A
 
 </p>
-
 
 </div>
 
@@ -299,16 +395,18 @@ Date Left -> N/A
 
 <div class="card">
 
-<h3>
-Aetherverse
-</h3>
+<h3>Aetherverse</h3>
 
 <p class="placeholder">
 
 Role -> Founder
+
 <br>
+
 Date Joined -> 8-2-2025
+
 <br>
+
 Date Left -> 1-23-2026
 
 </p>
@@ -316,18 +414,21 @@ Date Left -> 1-23-2026
 </div>
 
 
+
 <div class="card">
 
-<h3>
-Aethro
-</h3>
+<h3>Aethro</h3>
 
 <p class="placeholder">
 
 Role -> Gaming Manager
+
 <br>
+
 Date Joined -> 11-25-2024
+
 <br>
+
 Date Left -> 6-18-2025
 
 </p>
@@ -335,12 +436,7 @@ Date Left -> 6-18-2025
 </div>
 
 
-
-
 </div>
-
-
-
 
 
 
@@ -353,14 +449,15 @@ Date Left -> 6-18-2025
 
 <div class="card">
 
-<h3>
-Eldenstead
-</h3>
-
+<h3>Eldenstead</h3>
 
 <p class="placeholder">
 
-Eldenstead is a medieval Minecraft server focused on building kingdoms, growing communities, and creating lasting player-driven stories. Whether you enjoy exploring, trading, building, or conquering, every choice helps shape the world. Our goal is to provide an immersive experience that players can call home for years to come.
+Eldenstead is a medieval Minecraft server focused on building kingdoms, growing communities, and creating lasting player-driven stories.
+
+<br><br>
+
+Whether you enjoy exploring, trading, building, or conquering, every choice helps shape the world. Our goal is to provide an immersive experience that players can call home for years to come.
 
 </p>
 
@@ -379,57 +476,21 @@ Eldenstead is a medieval Minecraft server focused on building kingdoms, growing 
 <h2>Skills</h2>
 
 
-<span class="skill">
-HTML / CSS
-</span>
-
-<span class="skill">
-Frontend Development
-</span>
-
-<span class="skill">
-Backend Development
-</span>
-
-<span class="skill">
-Server Management
-</span>
-
-<span class="skill">
-Debugging & Troubleshooting
-</span>
-
-<span class="skill">
-Game Server Management
-</span>
-
-<span class="skill">
-Domain & DNS Management
-</span>
-
-<span class="skill">
-Customer Service
-</span>
-
-<span class="skill">
-Communication
-</span>
-
-<span class="skill">
-Time Management
-</span>
-
-<span class="skill">
-Organization
-</span>
-
-<span class="skill">
-Leadership
-</span>
+<span class="skill">HTML / CSS</span>
+<span class="skill">Frontend Development</span>
+<span class="skill">Backend Development</span>
+<span class="skill">Server Management</span>
+<span class="skill">Debugging & Troubleshooting</span>
+<span class="skill">Game Server Management</span>
+<span class="skill">Domain & DNS Management</span>
+<span class="skill">Customer Service</span>
+<span class="skill">Communication</span>
+<span class="skill">Time Management</span>
+<span class="skill">Organization</span>
+<span class="skill">Leadership</span>
 
 
 </div>
-
 
 
 
@@ -443,36 +504,20 @@ Leadership
 
 <div class="buttons">
 
-<a href="https://github.com/TristanF404">
-GitHub
-</a>
+<a href="https://github.com/TristanF404">GitHub</a>
 
+<a href="https://discord.eldenstead.com">Discord</a>
 
-<a href="https://discord.eldenstead.com">
-Discord
-</a>
+<a href="https://www.linkedin.com/in/tristan-foster-4638b840b/">LinkedIn</a>
 
+<a href="https://www.youtube.com/@eldenstead">YouTube</a>
 
-<a href="https://www.linkedin.com/in/tristan-foster-4638b840b/">
-LinkedIn
-</a>
-
-
-<a href="https://www.youtube.com/@eldenstead">
-YouTube
-</a>
-
-
-<a href="https://eldenstead.com">
-Website
-</a>
-
+<a href="https://eldenstead.com">Website</a>
 
 </div>
 
 
 </div>
-
 
 
 
@@ -483,23 +528,26 @@ Website
 
 <h2>Contact</h2>
 
-
 <p class="placeholder">
 
 Personal -> Tristan@source404.com
+
 <br>
+
 Eldenstead -> Tristan@eldenstead.com
+
 <br>
+
 Sponsors, Partnerships, etc -> HR@source404.com
+
 <br>
+
 Eldenstead Sponsors, Partnerships, etc -> HR@eldenstead.com
 
 </p>
 
 
 </div>
-
-
 
 
 </div>
@@ -513,7 +561,6 @@ Eldenstead Sponsors, Partnerships, etc -> HR@eldenstead.com
 © Tristan Foster • Portfolio
 
 </div>
-
 
 
 </body>
