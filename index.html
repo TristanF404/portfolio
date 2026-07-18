@@ -1,11 +1,490 @@
-<!DOCTYPE html><html><head><meta charset="UTF-8"><meta name="viewport" content="width=device-width,initial-scale=1"><title>Tristan Foster | Portfolio</title><link rel="stylesheet" href="style.css"></head><body>
-<div class="bg"></div><header><h1>Tristan Foster</h1><nav><a href="#irl">IRL Work</a><a href="#online">Online Work</a><a href="#contact">Contact</a></nav></header>
-<section class="hero"><h2>Systems Administrator • Developer • Founder</h2><p>Building communities, infrastructure and modern web experiences.</p><a class="btn" href="#online">View Projects</a></section>
-<section id="featured" class="card"><h2>Featured Project</h2><h3>Eldenstead</h3><p>Minecraft community, infrastructure, website and development.</p></section>
-<div class="grid">
-<section id="irl" class="card"><h2>💼 IRL Work</h2><p>Add your employment history here.</p></section>
-<section id="online" class="card"><h2>🌐 Online Work</h2><div class="proj"><h3>Eldenstead</h3><p>Founder</p></div><div class="proj"><h3>Portfolio</h3><p>Cloudflare Pages</p></div></section>
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<title>Your Name | Portfolio</title>
+
+<style>
+
+:root{
+    --background:#100018;
+    --card:#1b1028;
+    --cyan:#00f5ff;
+    --pink:#ff4fd8;
+    --text:#f2efff;
+    --muted:#aaa;
+}
+
+*{
+    box-sizing:border-box;
+}
+
+body{
+    margin:0;
+    background:
+    radial-gradient(circle at top,#3b1263,#100018 55%);
+    color:var(--text);
+    font-family:"Segoe UI",Arial,sans-serif;
+}
+
+
+/* HERO */
+
+.hero{
+    text-align:center;
+    padding:90px 20px;
+}
+
+.hero h1{
+    font-size:70px;
+    margin:0;
+
+    background:linear-gradient(
+        90deg,
+        var(--cyan),
+        var(--pink)
+    );
+
+    -webkit-background-clip:text;
+    color:transparent;
+}
+
+.hero p{
+    max-width:850px;
+    margin:20px auto;
+    font-size:20px;
+    color:#ccc;
+}
+
+
+/* BUTTONS */
+
+.buttons a{
+
+    display:inline-block;
+    padding:12px 25px;
+    margin:8px;
+
+    border-radius:30px;
+
+    text-decoration:none;
+    color:white;
+
+    background:
+    linear-gradient(
+        90deg,
+        var(--cyan),
+        var(--pink)
+    );
+
+    transition:.3s;
+}
+
+
+.buttons a:hover{
+    transform:translateY(-4px);
+}
+
+
+/* MAIN */
+
+.container{
+
+    max-width:1300px;
+    margin:auto;
+    padding:20px;
+
+}
+
+
+.section{
+
+    background:
+    rgba(255,255,255,.05);
+
+    border:1px solid rgba(255,255,255,.1);
+
+    border-radius:18px;
+
+    padding:25px;
+
+    margin-bottom:25px;
+
+    backdrop-filter:blur(10px);
+
+}
+
+
+h2{
+
+    color:var(--cyan);
+
+    border-bottom:
+    2px solid var(--pink);
+
+    padding-bottom:10px;
+
+}
+
+
+
+.card{
+
+    background:
+    rgba(0,0,0,.25);
+
+    border-left:
+    4px solid var(--pink);
+
+    border-radius:12px;
+
+    padding:18px;
+
+    margin:15px 0;
+
+}
+
+
+
+.placeholder{
+
+    color:#888;
+
+    font-style:italic;
+
+}
+
+
+
+/* SKILLS */
+
+.skill{
+
+    display:inline-block;
+
+    padding:10px 16px;
+
+    margin:5px;
+
+    border-radius:25px;
+
+    background:#241338;
+
+    border:
+    1px solid var(--cyan);
+
+}
+
+
+/* FOOTER */
+
+.footer{
+
+    text-align:center;
+
+    padding:30px;
+
+    color:#888;
+
+}
+
+</style>
+
+</head>
+
+
+<body>
+
+
+<div class="hero">
+
+<h1>Your Name</h1>
+
+<p>
+Portfolio & Resume<br>
+Projects • Experience • Skills • Online Work
+</p>
+
+
+<div class="buttons">
+
+<a href="#">
+Download Resume
+</a>
+
+<a href="#">
+Contact
+</a>
+
 </div>
-<section class="card"><h2>Skills</h2><div class="tags"><span>Linux</span><span>Cloudflare</span><span>Docker</span><span>HTML</span><span>CSS</span><span>JavaScript</span><span>Networking</span></div></section>
-<footer id="contact"><p>© 2026 Tristan Foster</p></footer>
-<script src="script.js"></script></body></html>
+
+
+</div>
+
+
+
+
+<div class="container">
+
+
+
+<div class="section">
+
+<h2>About Me</h2>
+
+<p class="placeholder">
+Add your introduction here...
+</p>
+
+</div>
+
+
+
+
+
+<div class="section">
+
+<h2>IRL Work Experience</h2>
+
+
+<div class="card">
+
+<h3>
+Job Title / Company
+</h3>
+
+<p class="placeholder">
+
+Add your real-life work experience here.
+
+Include:
+<br>
+• Company
+<br>
+• Position
+<br>
+• Dates
+<br>
+• Responsibilities
+<br>
+• Achievements
+
+</p>
+
+</div>
+
+
+
+<div class="card">
+
+<h3>
+Job Title / Company
+</h3>
+
+<p class="placeholder">
+Another IRL experience placeholder...
+</p>
+
+</div>
+
+
+</div>
+
+
+
+
+
+
+
+<div class="section">
+
+<h2>Online Work Experience</h2>
+
+
+<div class="card">
+
+<h3>
+Project / Organization
+</h3>
+
+<p class="placeholder">
+
+Add online experience here.
+
+Examples:
+<br>
+• Websites
+<br>
+• Servers
+<br>
+• Communities
+<br>
+• Development
+<br>
+• Freelance
+
+</p>
+
+
+</div>
+
+
+
+<div class="card">
+
+<h3>
+Project / Organization
+</h3>
+
+<p class="placeholder">
+Another online experience placeholder...
+</p>
+
+</div>
+
+
+</div>
+
+
+
+
+
+
+
+
+<div class="section">
+
+<h2>Projects</h2>
+
+
+<div class="card">
+
+<h3>
+Project Name
+</h3>
+
+
+<p class="placeholder">
+
+Describe your project here...
+
+</p>
+
+</div>
+
+
+</div>
+
+
+
+
+
+
+<div class="section">
+
+<h2>Skills</h2>
+
+
+<span class="skill">
+Skill
+</span>
+
+<span class="skill">
+Skill
+</span>
+
+<span class="skill">
+Skill
+</span>
+
+<span class="skill">
+Skill
+</span>
+
+
+</div>
+
+
+
+
+
+
+
+<div class="section">
+
+<h2>Socials</h2>
+
+
+<div class="buttons">
+
+<a href="#">
+GitHub
+</a>
+
+
+<a href="#">
+Discord
+</a>
+
+
+<a href="#">
+LinkedIn
+</a>
+
+
+<a href="#">
+YouTube
+</a>
+
+
+<a href="#">
+Website
+</a>
+
+
+</div>
+
+
+</div>
+
+
+
+
+
+
+
+<div class="section">
+
+<h2>Contact</h2>
+
+
+<p class="placeholder">
+
+Add your email/contact information here.
+
+</p>
+
+
+</div>
+
+
+
+
+</div>
+
+
+
+
+
+<div class="footer">
+
+© Your Name • Portfolio
+
+</div>
+
+
+
+</body>
+</html>
